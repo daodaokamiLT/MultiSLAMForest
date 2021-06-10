@@ -15,6 +15,14 @@ namespace msf_basic{
 
 typedef double basic_number_t;
 
+enum DEVICE_TYPE{
+    UnSure = -1,
+    Cam = 0,
+    Imu = 1
+    // Odom = 2
+    // and so on ...
+};
+
 enum CAM_MODEL{
     UnSure = -1,
     RadiaTan = 0,
@@ -28,6 +36,7 @@ enum IMU_MODEL{
 };
 
 struct hard_device{
+    int device_type = -1;
     int set_id = -1;
     int device_id = -1;
     unsigned long long timestamp = 0ll;
