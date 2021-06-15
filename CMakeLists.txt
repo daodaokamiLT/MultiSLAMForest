@@ -10,3 +10,4 @@ include_directories(${OpenCV_INCLUDE_DIRS}
 set(dependency ${OpenCV_LIBS})
 
 add_subdirectory(core)
+add_subdirectory(test)
