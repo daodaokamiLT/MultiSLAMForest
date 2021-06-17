@@ -24,12 +24,17 @@ class FunctionalVector{
             start_index_ = 0;
             end_index_ = 0;
         }
-        
+
+        int size();
+        bool push(T &t);
+        T &top();  
+
     private:
         std::vector<T> datas_;
         int start_index_ = 0;
         int end_index_ = 0;
-        bool is_init_ = false;
+        // start_index + 1 == end_index is full
+        // start_index == end_index no data
         T nan_; // 只要默认构造函数的都可以判断
         bool is_ptr_ = std::is_pointer(T);
 };
