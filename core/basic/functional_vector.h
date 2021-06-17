@@ -24,12 +24,6 @@ class FunctionalVector{
             start_index_ = 0;
             end_index_ = 0;
         }
-
-<<<<<<< HEAD
-        int size();
-        bool push(T &t);
-        T &top();  
-=======
         int Size();      // return currnt valid size
         bool Push(T &t); // push data in
         const T& Top();  // return a shallow copu
@@ -44,7 +38,6 @@ class FunctionalVector{
         T Index(int id);
 
         std::string ToString();
->>>>>>> 54c6630a340b0148ceccb7cdaa6bfec61f9d48bd
 
     private:
         std::vector<T> datas_;
