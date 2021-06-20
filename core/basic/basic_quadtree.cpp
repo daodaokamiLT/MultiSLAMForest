@@ -54,7 +54,7 @@ namespace msf_basic{
 
         max_range_.y_max = contained_points_yminpreordered_[pointsize -1].y;
         max_range_.y_min = contained_points_yminpreordered_[0].y;
-
+        
         CreateQuadTree();
     }
     
